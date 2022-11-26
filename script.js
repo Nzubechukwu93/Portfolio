@@ -16,3 +16,20 @@ $(document).ready(function(){
 
 
 });
+
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click' , function handleClick(event) {
+    event.preventDefault();
+
+    const textInput = document.getElementById('text');
+    console.log(textInput.value);
+    textInput.value = '';
+    
+
+    const inputs = document.querySelectorAll('#first_name, #last_name, #email');
+
+    inputs.forEach(input => {
+        input.value = '';
+    });
+});
