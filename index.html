@@ -11,9 +11,26 @@
 </head>
 <body>
 
-    <nav class="navbar">
+    <div>
+        <nav class="navbar">
+            <div class="logo"><a href="#">Nzube_<span>Dev.</span></a></div>
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle">
+                <label for="checkbox_toggle"
+                class="hamburger">&#9776</label>
+                <div class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Contact</a></li>
+                </div>
+            </ul>
+        
+        </nav>
+    </div>
+
+    <!-- <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <div class="logo"><a href="#">Nzube_<span>Dev.</span></a></div>
                 <ul class="menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -25,7 +42,7 @@
             </div>
 
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Home section Start -->
 
@@ -41,26 +58,6 @@
         </div>
 
     </section>
-
-    <!-- About section start -->
-
-    <!-- <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="./images/tanco3.jpg" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Nzubechukwu and I'm a <span>Frontend developer</span></div>
-                    <p>I develop websites and applications using HTML, CSS, JAVASCRIPT, REACT JS</p>
-                    <a href="">Download CV</a>
-                </div>
-                
-            </div>
-        </div>
-
-    </section> -->
 
     <!-- skills section start -->
 
@@ -108,33 +105,32 @@
     <section class="contact" id="contact">
         <h1 class="title">Contact</h1>
 
-        <div>
-            <form class="form" action="https://formsubmit.co/oriji.nzubechukwu@gmail.com" method="POST">
+        <form id="my_form" action="https://formsubmit.co/bd35760c35fc9416241c764b1851e3ac" method="POST">
 
-                <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://nzubechukwu93.github.io/Portfolio/message.html">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://nzubechukwu93.github.io/Portfolio/message.html">
 
-                First name: <br>
-                <input type="text" id="first_name" name="firstname" placeholder="First name" required>
-                <br>
-                Last name: <br>
-                <input type="text" id="last_name" name="lastname" placeholder="Last name" required>
-                <br>
-                Email: <br>
-                <input type="text" id="email" name="email" placeholder="Email" required>
-                <br>
-                <br>
-                <textarea name="message" placeholder="Message" id="text" cols="30" rows="10" required></textarea>
-                <br>
-                <button type="submit" id="btn" class="btn">Submit</button>
+            <label for="fname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="First name" required>
+
+            <label for="fname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Last name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email address" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Your message" style="height: 200px" required></textarea>
             
-            </form>
-        </div>
-
-
+            <button type="submit" class="btn">Submit</button>
+        </form>
 
     </section>
+
+
+
+    </section> 
     
     
 
