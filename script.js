@@ -19,23 +19,26 @@
 
 const form =document.getElementById('my_form')
 
-form.addEventListener('submit', function handleSubmit(event){
-    event.preventDefault();
-
-    form.reset();
+form.addEventListener('submit', function handleSubmit(){
+    
+    form.reset()
 })
 
-const btn =document.getElementById('btn');
 
-btn.addEventListener('click', function handleClick(event){
-    event.preventDefault();
 
-    const inputs = document.querySelectorAll('#firstname, #lastname, #email, #message');
 
-    inputs.forEach(input => {
-        input.value = '';
-    });
-});
+
+// const btn =document.getElementById('btn');
+
+// btn.addEventListener('click', function handleClick(event){
+//     event.preventDefault();
+
+//     const inputs = document.querySelectorAll('#firstname, #lastname, #email, #message');
+
+//     inputs.forEach(input => {
+//         input.value = '';
+//     });
+// });
     
 
 
